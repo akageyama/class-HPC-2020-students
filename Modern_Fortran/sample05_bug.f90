@@ -6,7 +6,8 @@ program sample05_bug
   real(DR) :: pi_double
 
   print *, " SR, DR = ", SR, DR
-  pi_single = 3.14159265
-  pi_double = 3.141592653589793238
-  print *, " pi_single, pi_double = ", pi_single, pi_double
+  pi_single = 3.1415926
+  pi_double = 3.141592653589793
+  print *, " pi_single = ", pi_single
+  print *, " pi_double = ", pi_double
 end program sample05_bug

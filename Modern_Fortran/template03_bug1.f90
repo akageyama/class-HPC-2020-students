@@ -14,8 +14,8 @@ contains
   subroutine double(a, b)
     real(DR), intent(in) :: a
     real(DR), intent(out) :: b
-    
-    a = 0.0_DR   ! 入力属性のaを再定義しようとしている。
+
+    a = 0.0_DR
     b = a*2
   end subroutine double
   

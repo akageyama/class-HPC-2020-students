@@ -14,8 +14,7 @@ contains
   subroutine double(a, b)
     real(DR), intent(in) :: a
     real(DR), intent(out) :: b
-
-    ! b = a*2  ! out属性を持つ変数bの値を設定していない。
+    ! b = a*2
   end subroutine double
   
 end program template03_bug2

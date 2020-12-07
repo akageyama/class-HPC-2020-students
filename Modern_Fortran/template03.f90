@@ -12,6 +12,9 @@ program template03
 contains
 
   subroutine double(a, b)
+    real(DR), intent(in) :: a
+    real(DR), intent(out) :: b
+    b = a*2
   end subroutine double
   
 end program template03
