@@ -1,0 +1,10 @@
+!-------------------------------------------------------------------
+! params.namelist
+! 
+!  * Simulation data for Burgers equation.
+!  * Nx = Grid size of the simulation
+!  * Diffusion_coeff = fluid viscosity
+!-------------------------------------------------------------------
+!
+&data00 Nx = 500 /
+&data01 Diffusion_coeff = 0.005 /
