@@ -18,6 +18,6 @@ module constants_m
   integer, parameter :: DR = selected_real_kind(12) !! 倍精度実数種別値
 
   ! << Mathematical constants >>
-  real(DR), parameter :: PI = 3.1415926535897932_DR !! 円周率
+  real(DR), parameter :: PI = atan(1.0_DR)*4        !! 円周率
   real(DR), parameter :: TWOPI = PI*2               !! 円周率の2倍
 end module constants_m
