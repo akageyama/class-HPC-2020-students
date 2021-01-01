@@ -2,7 +2,7 @@ program collatz
   use constants_m
   implicit none
 
-  integer(DI) :: n = 27
+  integer(DI) :: n = 30
 
   print *, " n = ", n
 
