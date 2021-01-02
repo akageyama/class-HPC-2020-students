@@ -4,8 +4,6 @@
 !    by Akira Kageyama, Kobe University, Japan.
 !       email: sgks@mac.com
 !
-!    Copyright 2018 Akira Kageyama
-!
 !    This software is released under the MIT License.
 !
 !-------------------------------------------------------------------

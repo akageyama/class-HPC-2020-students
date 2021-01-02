@@ -4,8 +4,6 @@
 !    by Akira Kageyama, Kobe University, Japan.
 !       email: sgks@mac.com
 !
-!    Copyright 2018 Akira Kageyama
-!
 !    This software is released under the MIT License.
 !
 !-------------------------------------------------------------------
@@ -99,7 +97,6 @@ contains
     integer(SI) :: i, j, k
     real(DR) :: xx, yy, zz
     real(DR) :: force_region_x_min, force_region_x_max
-    real(DR) :: force_region_x_min_rev, force_region_x_max_rev
     real(DR) :: force_center_y, force_center_z
     real(DR) :: force_cylinder_diameter, force_cylinder_radius_sq
     
@@ -121,8 +118,6 @@ contains
     !
     force_region_x_min = XMIN + (XMAX-XMIN)/5
     force_region_x_max = force_region_x_min + (XMAX-XMIN)/10
-    force_region_x_max_rev = XMAX - (XMAX-XMIN)/5
-    force_region_x_min_rev = force_region_x_max_rev - (XMAX-XMIN)/10
     force_center_y = (YMAX + YMIN) / 2
     force_center_z = (ZMAX + ZMIN) / 2
     force_cylinder_diameter  = min(YMAX-YMIN, ZMAX-ZMIN) / 4
@@ -140,14 +135,6 @@ contains
                         .and.  &
                (xx < force_region_x_max) ) then
             Drive_force%x(i,j,k) = THE_FORCE
-            Drive_force%y(i,j,k) = 0.0_DR
-            Drive_force%z(i,j,k) = 0.0_DR
-          else if ( (yy**2+zz**2) < force_cylinder_radius_sq  &
-                        .and.  &
-               (xx > force_region_x_min_rev)  & 
-                        .and.  &
-               (xx < force_region_x_max_rev)) then
-            Drive_force%x(i,j,k) = -THE_FORCE
             Drive_force%y(i,j,k) = 0.0_DR
             Drive_force%z(i,j,k) = 0.0_DR
           else

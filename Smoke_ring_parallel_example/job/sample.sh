@@ -4,6 +4,7 @@
 #PBS -o stdout.log
 #PBS -e stderr.log
 #PBS -l select=1:ncpus=24:mpiprocs=12
+#PBS -l walltime=00:10:00
 
 cd ${PBS_O_WORKDIR}
 
@@ -12,6 +13,7 @@ echo
 export KMP_AFFINITY=disalbed
 export OMP_NUM_THREADS=2
 
-mpiexec_mpt -np 12 omplace -nt ${OMP_NUM_THREADS} -c 0-23 ./smoke_ring ./params.namelist
+mpiexec_mpt -np 12 omplace -nt ${OMP_NUM_THREADS} ./smoke_ring ./params.namelist
+
 echo
 echo ----------- job ends on `date` ----------

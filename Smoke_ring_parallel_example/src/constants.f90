@@ -4,8 +4,6 @@
 !    by Akira Kageyama, Kobe University, Japan.
 !       email: sgks@mac.com
 !
-!    Copyright 2018 Akira Kageyama
-!
 !    This software is released under the MIT License.
 !
 !-------------------------------------------------------------------
@@ -26,13 +24,13 @@ module constants_m
   real(DR), parameter :: TWOPI = PI*2
 
   ! << Grid Size >>
-  !integer(SI), parameter :: NX =  93
-  !integer(SI), parameter :: NY =  32
-  !integer(SI), parameter :: NZ =  32
+  integer(SI), parameter :: NX =  90
+  integer(SI), parameter :: NY =  30
+  integer(SI), parameter :: NZ =  30
  
-  integer(SI), parameter :: NX =  60
-  integer(SI), parameter :: NY =  20
-  integer(SI), parameter :: NZ =  20
+  ! integer(SI), parameter :: NX =  60
+  ! integer(SI), parameter :: NY =  20
+  ! integer(SI), parameter :: NZ =  20
  
   ! integer(SI), parameter :: NX = 156
   ! integer(SI), parameter :: NY = 52

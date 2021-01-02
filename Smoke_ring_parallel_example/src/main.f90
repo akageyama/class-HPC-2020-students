@@ -13,7 +13,7 @@
 program main_m
   !$use omp_lib
   use constants_m   ! numerical constants
-  use rank_m    ! information for rank
+  use rank_m        ! information for rank
   use ut_m          ! utility functions
   use params_m      ! parameters
   use debug_m       ! for debugging
