@@ -22,6 +22,7 @@ program main_m
   use slicedata_m   ! generate 2-d sliced data
   use solver_m      ! 4th order runge-kutta integration method
   use job_m         ! job monitor
+  use mpi
   implicit none
 
   integer(SI) :: myrank, nprocs, ierror

@@ -19,6 +19,7 @@ module solver_m
   use field_m
   use debug_m
   use job_m
+  use mpi
 
   implicit none
 

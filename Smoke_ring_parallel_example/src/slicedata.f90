@@ -18,6 +18,7 @@ module slicedata_m
   use solver_m
   use grid_m
   use rank_m
+  use mpi
   implicit none
   private
   public :: slicedata__initialize,  &
