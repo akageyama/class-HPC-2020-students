@@ -13,6 +13,8 @@ echo
 export KMP_AFFINITY=disalbed
 export OMP_NUM_THREADS=2
 
+ulimit -s unlimited
+
 mpiexec_mpt -np 12 omplace -nt ${OMP_NUM_THREADS} ./smoke_ring ./params.namelist
 
 echo
