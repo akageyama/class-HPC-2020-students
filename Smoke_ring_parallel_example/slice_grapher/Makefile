@@ -90,3 +90,4 @@ clean:
 	rm -f *.o *.mod *~
 	rm -f gnuplot_data_generator extract_nloop_list nloop_list.txt
 	rm -rf Workfiles _data_slice 
+	rm -rf $(Workfiles_original)
